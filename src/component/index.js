@@ -1,7 +1,4 @@
-import CompletedSignUps from './CompletedSignUps';
-import NodeMapView from './NodeMapView';
+import CompletedSignUps from './CompletedSignUps'
+import NodeMapView from './NodeMapView'
 
-export {
-  CompletedSignUps,
-  NodeMapView 
-}
+export { CompletedSignUps, NodeMapView }
