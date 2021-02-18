@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 const CanvasJS = require('./canvasjs.min')
-const canvas_lib = CanvasJS.Chart ? CanvasJS : window.CanvasJS
+const canvas_lib = CanvasJS
 
 class CanvasJSChart extends Component {
   static _cjsContainerId = 0

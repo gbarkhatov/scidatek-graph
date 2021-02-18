@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "jest-canvas-mock": "^2.3.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.2.0",
@@ -16,6 +17,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:watch": "react-scripts test --watch",
+    "test:coverage": "react-scripts test --coverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
