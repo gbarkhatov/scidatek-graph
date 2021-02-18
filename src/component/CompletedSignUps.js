@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import { FiArrowUp, FiSettings } from 'react-icons/fi'
 import { BiInfoCircle } from 'react-icons/bi'
 
-import CanvasJSReact from '../lib/canvasjs.react'
+// import CanvasJSReact from '../lib/canvasjs.react'
 import { options_1, options_2 } from '../MockData'
 
-const CanvasJSChart = CanvasJSReact.CanvasJSChart
+// const CanvasJSChart = CanvasJSReact.CanvasJSChart
 
 function CompletedSignUps() {
   const [dataMode, setDataMode] = useState('1')
@@ -48,9 +48,9 @@ function CompletedSignUps() {
               </div>
             </div>
             <div className='graph-part p-3'>
-              <CanvasJSChart
+              {/* <CanvasJSChart
                 options={dataMode === '1' ? options_1 : options_2}
-              />
+              /> */}
             </div>
           </div>
         </div>
