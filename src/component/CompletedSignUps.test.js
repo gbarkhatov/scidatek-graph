@@ -1,7 +1,7 @@
 import { render, fireEvent } from '@testing-library/react'
 import CompletedSignUps from './CompletedSignUps'
 
-test('renders CompletedSignUps properly', () => {
+test('CompletedSignUps changes dropdown properly', () => {
   const { getByTestId, getAllByTestId } = render(<CompletedSignUps />)
   fireEvent.change(getByTestId('select'), { target: { value: 2 } })
 

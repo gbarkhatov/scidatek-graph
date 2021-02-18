@@ -46,9 +46,14 @@ function NodeMapView() {
               className='mr-2 form-control btn-branch'
               value={dataMode}
               onChange={(event) => changeOption(event.target.value)}
+              data-testid='select'
             >
-              <option value='0'>Node1</option>
-              <option value='1'>Node2</option>
+              <option value='0' data-testid='select-option'>
+                Node1
+              </option>
+              <option value='1' data-testid='select-option'>
+                Node2
+              </option>
             </select>
             <FiSettings />
           </div>
