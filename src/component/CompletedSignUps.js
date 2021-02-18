@@ -3,7 +3,7 @@ import { FiArrowUp, FiSettings } from 'react-icons/fi'
 import { BiInfoCircle } from 'react-icons/bi'
 
 // import CanvasJSReact from '../lib/canvasjs.react'
-import { options_1, options_2 } from '../MockData'
+// import { options_1, options_2 } from '../MockData'
 
 // const CanvasJSChart = CanvasJSReact.CanvasJSChart
 
@@ -25,10 +25,17 @@ function CompletedSignUps() {
               className='mr-2 form-control btn-branch'
               value={dataMode}
               onChange={(event) => setDataMode(event.target.value)}
+              data-testid='select'
             >
-              <option value='0'>Choose data sample</option>
-              <option value='1'>Last 30 days</option>
-              <option value='2'>24 Hours</option>
+              <option value='0' data-testid='select-option'>
+                Choose data sample
+              </option>
+              <option value='1' data-testid='select-option'>
+                Last 30 days
+              </option>
+              <option value='2' data-testid='select-option'>
+                24 Hours
+              </option>
             </select>
             <FiSettings />
           </div>

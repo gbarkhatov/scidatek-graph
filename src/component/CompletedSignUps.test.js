@@ -1,8 +1,12 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen, fireEvent } from '@testing-library/react'
 import CompletedSignUps from './CompletedSignUps'
 
 test('renders CompletedSignUps properly', () => {
-  render(<CompletedSignUps />)
-  // const linkElement = screen.getByText(/Sign-ups completed/i)
-  // expect(linkElement).toBeInTheDocument()
+  const { getByTestId, getAllByTestId } = render(<CompletedSignUps />)
+  fireEvent.change(getByTestId('select'), { target: { value: 2 } })
+
+  let options = getAllByTestId('select-option')
+  expect(options[0].selected).toBeFalsy()
+  expect(options[1].selected).toBeFalsy()
+  expect(options[2].selected).toBeTruthy()
 })
